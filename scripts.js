@@ -57,7 +57,39 @@ document.write("<p>Un sabado en la mañana, el " + adjetivo + " " + sustantivo +
 document.write("<p>Cada vez que el " + adjetivo + " " + sustantivo + " " + verbo +" todos se divertían.</p>");*/
 
 
-console.log("Inicio del programa");
+/*console.log("Inicio del programa");
 var dado = Math.floor(Math.random()*6)+1;
 alert("Dado dice:"+dado);
-console.log("Programa completado");
+console.log("Programa completado");*/
+
+/*var numero = prompt("Ingrese un numero");
+var aleatorio = Math.floor((Math.random() * 10) + 1);
+if(parseInt(numero)==aleatorio){
+		alert("El número es correcto");
+		document.write("bien");
+}else{
+		alert("El número es INcorrecto");
+		document.write("mal");
+}*/
+
+var numero = prompt("Ingrese un numero");
+var aleatorio = Math.floor(Math.random() * 2) + 1;
+if(parseInt(numero)<aleatorio){
+		alert("El número "+numero+ " es INFERIOR a "+ aleatorio);
+	}else if(parseInt(numero)>aleatorio){
+		alert("El número"+numero+" es SUPERIOR a "+ aleatorio);
+		}else {
+			alert("GANASTE!!");
+		}
+		
+
+
+/*function tiraDados(){
+	var dado = Math.floor(Math.random()*6)+1;
+	alert(dado);
+}	
+
+alert ("Tiramos 3 dados:");
+tiraDados();
+tiraDados();
+tiraDados();*/
