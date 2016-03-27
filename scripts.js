@@ -30,11 +30,34 @@ var diasVida = edad*segundosPorDia;
 document.write("<h1>Calculadora del Tiempo</h1><p>Hay "+segundosPorDia +" en un día</p>");
 document.write("<h1>Dias vividos</h1><p>Tienes "+diasVida +" días de vida</p>");*/
 
-console.log("inicio de programa");
+/*console.log("inicio de programa");
 
 var peliculasVistas=prompt("Peliculas vistas por mes");
 var seriesVistas=prompt("Series vistas por mes");
 var tiempoPantalla=parseInt(peliculasVistas) + parseInt(seriesVistas);
 alert('Wow! Has visto ' +tiempoPantalla+ " veces minimo la pantalla");
 
-console.log("Fin de programa");
+console.log("Fin de programa");*/
+
+
+alert("BIENVENIDOS AL CUENTA CUENTOS Emoticón smile");
+var pregutas = 3;
+var pregtasFaltantes = ("Quedan " + pregutas + " preguntas.");
+alert("Este es el juego del cuenta cuentos. Siga las instrucciones.");
+var sustantivo = prompt("Inserte un sustantivo! " +  pregtasFaltantes);
+pregutas = pregutas - 1;
+pregtasFaltantes = ("Quedan "+pregutas+" preguntas.");
+var adjetivo = prompt("Ahora ingresa un adjetivo!" +  pregtasFaltantes);
+pregutas = pregutas - 1;
+pregtasFaltantes = ("Quedan "+pregutas+" preguntas.");
+var verbo = prompt("Por último ingresa un verbo!"+  pregtasFaltantes);
+document.write("<h1>EL CUENTA CUENTOS</h1>");
+document.write("<p>EL " + adjetivo + " " + sustantivo + " solía " + verbo +" los domingos en la tarde.</p>");
+document.write("<p>Un sabado en la mañana, el " + adjetivo + " " + sustantivo + " deseaba " + verbo +" junto con su familia.</p>");
+document.write("<p>Cada vez que el " + adjetivo + " " + sustantivo + " " + verbo +" todos se divertían.</p>");
+
+
+/*console.log("Inicio del programa");
+var dado = Math.floor(Math.random()*6)+1);
+alert("Dado dice:"+dado);
+console.log(Programa completado);*/
