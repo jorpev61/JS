@@ -62,6 +62,7 @@ var dado = Math.floor(Math.random()*6)+1;
 alert("Dado dice:"+dado);
 console.log("Programa completado");*/
 
+
 /*var numero = prompt("Ingrese un numero");
 var aleatorio = Math.floor((Math.random() * 10) + 1);
 if(parseInt(numero)==aleatorio){
@@ -72,24 +73,119 @@ if(parseInt(numero)==aleatorio){
 		document.write("mal");
 }*/
 
-var numero = prompt("Ingrese un numero");
-var aleatorio = Math.floor(Math.random() * 2) + 1;
+
+
+/*var numero = prompt("Ingrese un numero");
+var aleatorio = Math.floor(Math.random() * 10) + 1;
 if(parseInt(numero)<aleatorio){
 		alert("El número "+numero+ " es INFERIOR a "+ aleatorio);
 	}else if(parseInt(numero)>aleatorio){
 		alert("El número"+numero+" es SUPERIOR a "+ aleatorio);
 		}else {
 			alert("GANASTE!!");
-		}
+		}*/
 		
-
+/********FUNCIONES***********/
 
 /*function tiraDados(){
 	var dado = Math.floor(Math.random()*6)+1;
-	alert(dado);
 }	
-
 alert ("Tiramos 3 dados:");
 tiraDados();
 tiraDados();
 tiraDados();*/
+
+
+
+/*function tiraDados(){
+	var dado = Math.floor(Math.random()*6)+1;
+	return dado;
+}	
+
+alert ("Tiramos 3 dados:");
+alert("El dado dice:" +tiraDados());
+var multiplo = 2 * tiraDados();
+alert("El multiplo de bonus es:" +multiplo);*/
+
+
+/*function numeroAlAzarHastaLimite(limite){
+	var num = Math.floor(Math.random()*limite) + 1;
+	return num;		}
+var numAzar = numeroAlAzarHastaLimite(100);
+alert("#: " + numAzar);*/
+
+/*function numeroMax(dos){
+	var numero1 = prompt("Ingrese un valor 1");
+	var numero2 = prompt("Ingrese un valor 2");
+	var num = Math.max(numero1,numero2);
+	return num;		}
+var numDos = numeroMax(2);
+alert("Numero mayor es: " + numDos);*/
+
+
+
+/*function saludo(){
+	var mensaje = "Hola a todos";
+	alert(mensaje);
+}
+var mensaje = "Chao";
+saludo();
+alert(mensaje);
+saludo();*/
+
+/***********MANEJO DE ERRORES**********/
+
+/*var num = prompt("aaa");
+if (isNaN(num)) {
+
+	throw newError("No es un número válido");
+}
+else {
+	num = num * 0.5;
+	alert(num);
+}*/
+
+/********DESAFIO***********/
+
+
+
+/*function aleatorio(num1,num2){ 
+	if (isNaN(num1)||isNaN(num2)) {
+
+	throw newError("No es un número válido");
+}
+       var resAleatorio = Math.floor((Math.random() * (num2 - num1)) + num1);
+      return resAleatorio;
+}
+var num1 = prompt("Valor 1:");
+var num2 = prompt("Valor 2:");
+alert("#: " + aleatorio(parseInt(num1),parseInt(num2)));
+
+
+var contador = 0;
+	while(contador<10){
+		var randomico = aleatorio(parseInt(num1), parseInt(num2));
+		document.write(randomico+"");
+		contador++;
+	}*/
+
+
+/*********ADIVINA ADIVINADOR*************/
+function aleatorio(limite){
+	var num = Math.floor(Math.random()*limite) + 1;
+	return num;		}
+var numAzar = aleatorio(100);
+alert("# al azar: " + numAzar);
+
+var contador = 0;
+	while(true){
+		var randomico = aleatorio(100);
+		if(randomico==numAzar)
+		{
+			break;
+		}
+		//document.write(contador+"");
+		contador++;
+	}
+alert("#: adivinado " + randomico);
+alert("# intentos: " + contador);
